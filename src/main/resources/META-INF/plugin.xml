@@ -1,0 +1,14 @@
+<idea-plugin>
+    <id>ru.luk.statly</id>
+    <name>Statly</name>
+    <vendor email="volychevk@gmail.com">Kirill Volychev 501905</vendor>
+    <description>
+        Displays the number of lines and the file size in the status bar
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory implementation="ru.luk.statly.StatlyBarWidgetFactory" id="statly"/>
+    </extensions>
+</idea-plugin>
