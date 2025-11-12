@@ -1,0 +1,1 @@
+var typeSearchIndex = [{"p":"ru.luk.statly","l":"StatlyBarWidgetFactory","url":"ru/luk/statly/StatlyBarWidgetFactory.html"}, {"p":"ru.luk.statly","l":"StatlyBarWidget","url":"ru/luk/statly/StatlyBarWidget.html"}, {"l":"All classes","url":"allclasses.html"}]
