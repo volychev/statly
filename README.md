@@ -17,7 +17,7 @@ Statly shows the **number of lines, character count, and file size** for the cur
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/statly.git
+   git clone https://github.com/volychev/statly.git
    ```
 2. Open the project in IntelliJ IDEA.
 3. Build and run the plugin using **Run → Edit Configurations → Plugin**.
