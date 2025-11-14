@@ -310,14 +310,6 @@ public final class <span class="typeNameLabel"><a href=StatlyBarWidget.html>Stat
                                         </tr>
                                         
                                         <tr id="i5" class="rowColor">
-                                            <td class="colFirst"><code>Consumer&lt;<a href=https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html>MouseEvent</a>&gt;</code>
-                                            </td>
-                                            <th class="colSecond" scope="row"><code><a href=StatlyBarWidget.html#getClickConsumer()>getClickConsumer</a>() </code>
-                                            </th>
-                                            <td class="colLast">Returns the click action consumer, if any.</td>
-                                        </tr>
-                                        
-                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=StatlyBarWidget.html#install(com.intellij.openapi.wm.StatusBar)>install</a>(StatusBar statusBar) </code>
@@ -325,7 +317,7 @@ public final class <span class="typeNameLabel"><a href=StatlyBarWidget.html>Stat
                                             <td class="colLast">Called when the widget is installed into the status bar.</td>
                                         </tr>
                                         
-                                        <tr id="i7" class="rowColor">
+                                        <tr id="i6" class="altColor">
                                             <td class="colFirst"><code><a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html>Unit</a></code>
                                             </td>
                                             <th class="colSecond" scope="row"><code><a href=StatlyBarWidget.html#dispose()>dispose</a>() </code>
@@ -348,7 +340,7 @@ public final class <span class="typeNameLabel"><a href=StatlyBarWidget.html>Stat
                                             <!--   -->
                                         </a>
                                             <h3>Methods inherited from class&nbsp;com.intellij.openapi.wm.StatusBarWidget.WidgetPresentation</h3>
-                                            <code>getShortcutText</code></li>
+                                            <code>getClickConsumer, getShortcutText</code></li>
                                  
                                     <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
                                         <!--   -->
@@ -387,7 +379,7 @@ public final class <span class="typeNameLabel"><a href=StatlyBarWidget.html>Stat
                                             <dt><span class="paramLabel">Parameters:</span></dt>
                                             
                                             
-                                            <dd><code>project</code> - the IntelliJ project this widget belongs to</dd>
+                                            <dd><code>project</code> - the IDE project this widget belongs to</dd>
                                             
                                             
                                         </dl>
@@ -510,29 +502,6 @@ public final class <span class="typeNameLabel"><a href=StatlyBarWidget.html>Stat
                                         <h4>getText</h4>
                                         <pre class="methodSignature"> <a href=https://docs.oracle.com/javase/8/docs/api/java/lang/String.html>String</a> <a href=StatlyBarWidget.html#getText()>getText</a>()</pre>
                                         <div class="block"><p>Returns the text to display in the status bar.</p></div>
-
-                                        <dl>
-
-                                        
-
-                                        
-
-                                        
-
-                                        </dl>
-                                    </li>
-                                </ul>
-                                
-                                <a id="getClickConsumer()">
-                                    <!--   -->
-                                </a>
-                                <ul class=
-                                              "blockList"
-                                          >
-                                    <li class="blockList">
-                                        <h4>getClickConsumer</h4>
-                                        <pre class="methodSignature"> Consumer&lt;<a href=https://docs.oracle.com/javase/8/docs/api/java/awt/event/MouseEvent.html>MouseEvent</a>&gt; <a href=StatlyBarWidget.html#getClickConsumer()>getClickConsumer</a>()</pre>
-                                        <div class="block"><p>Returns the click action consumer, if any. Null indicates that no action occurs on click.</p></div>
 
                                         <dl>
 
