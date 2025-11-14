@@ -117,9 +117,8 @@ class StatlyBarWidget(private val project: Project) :
      */
     override fun install(statusBar: StatusBar) {
         this.statusBar = statusBar
-        updateText() // Initial update
+        updateText()
 
-        // Listen for file selection changes
         connection = project.messageBus.connect()
         connection?.subscribe(
             FileEditorManagerListener.FILE_EDITOR_MANAGER,
@@ -130,7 +129,6 @@ class StatlyBarWidget(private val project: Project) :
             }
         )
 
-        // Listen for document changes to update line count and character count
         docListener = object : DocumentListener {
             override fun beforeDocumentChange(event: DocumentEvent) {}
             override fun documentChanged(event: DocumentEvent) {
@@ -150,7 +148,7 @@ class StatlyBarWidget(private val project: Project) :
 
         textPanel.text = run {
             if (file == null) {
-                "" // No file selected
+                ""
             } else {
                 val editor = editorManager.selectedTextEditor
                 val document = editor?.document
