@@ -30,36 +30,21 @@ class StatlyBarWidgetFactory : StatusBarWidgetFactory {
     override fun getId(): String = "Statly"
 
     /**
-     * Returns the display name shown in Settings → Appearance & Behavior → Status Bar Widgets.
+     * Returns the display name shown in Settings.
      */
     override fun getDisplayName(): String = "File Info Widget"
-
-    /**
-     * Returns true if this widget should be available in the given project.
-     */
-    override fun isAvailable(project: Project): Boolean = true
-
-    /**
-     * Returns true if the widget can be enabled on the given status bar.
-     */
-    override fun canBeEnabledOn(statusBar: StatusBar): Boolean = true
 
     /**
      * Creates a new instance of the widget for the given project.
      */
     override fun createWidget(project: Project): StatusBarWidget = StatlyBarWidget(project)
-
-    /**
-     * Cleans up resources for the widget (not used in this implementation).
-     */
-    override fun disposeWidget(widget: StatusBarWidget) {}
 }
 
 /**
  * Status bar widget that shows the number of lines, character count,
  * and size of the currently selected file in the project.
  *
- * @param project the IntelliJ project this widget belongs to
+ * @param project the IDE project this widget belongs to
  */
 class StatlyBarWidget(private val project: Project) :
     StatusBarWidget, StatusBarWidget.TextPresentation {
@@ -101,12 +86,6 @@ class StatlyBarWidget(private val project: Project) :
      * Returns the text to display in the status bar.
      */
     override fun getText(): String = textPanel.text.toString()
-
-    /**
-     * Returns the click action consumer, if any.
-     * Null indicates that no action occurs on click.
-     */
-    override fun getClickConsumer(): Consumer<MouseEvent>? = null
 
     /**
      * Called when the widget is installed into the status bar.
